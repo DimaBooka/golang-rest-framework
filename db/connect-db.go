@@ -1,8 +1,8 @@
 package db
 
 import (
-	"gopkg.in/mgo.v2"
 	"transations-calculator/models"
+	"gopkg.in/mgo.v2"
 )
 
 type Tables struct {

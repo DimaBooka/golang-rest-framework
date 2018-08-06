@@ -1,8 +1,8 @@
 package models
 
 import (
-	"time"
 	"gopkg.in/mgo.v2/bson"
+	"time"
 )
 
 // Usage Example
@@ -42,10 +42,10 @@ func (Transaction) NewModel(opt map[string]interface{}) (interface{}, error) {
 	}, nil
 }
 
-func (Transaction) RetrieveOne() interface{}{
+func (Transaction) RetrieveOne() interface{} {
 	return &Transaction{}
 }
 
-func (Transaction) RetrieveArray() interface{}{
+func (Transaction) RetrieveArray() interface{} {
 	return &[]Transaction{}
 }

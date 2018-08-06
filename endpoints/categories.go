@@ -11,7 +11,6 @@ type CategoriesEndpoint struct {
 	Model db.ModelObject
 }
 
-
 func (c CategoriesEndpoint) GetAll(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("get all")
 
@@ -41,8 +40,6 @@ func (c CategoriesEndpoint) UpdateOne(w http.ResponseWriter, r *http.Request) {
 func (c CategoriesEndpoint) DeleteOne(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("delete one")
 }
-
-
 
 func SetResponseFail(message string, code int, w *http.ResponseWriter) error {
 	(*w).WriteHeader(code)

@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-type TransactionsEndpoint struct{
+type TransactionsEndpoint struct {
 	Model db.ModelObject
 }
 

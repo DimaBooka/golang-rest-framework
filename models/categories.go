@@ -1,8 +1,8 @@
 package models
 
 import (
-	"time"
 	"gopkg.in/mgo.v2/bson"
+	"time"
 )
 
 // Usage Example
@@ -24,7 +24,7 @@ type Category struct {
 	ID          bson.ObjectId `bson:"_id,omitempty" json:"id"`
 	Name        string        `bson:"name" json:"name"`
 	CreatedDate time.Time     `bson:"name" json:"name"`
-    ModelWithMethods
+	ModelWithMethods
 }
 
 func (Category) NewModel(opt map[string]interface{}) (interface{}, error) {
@@ -42,10 +42,10 @@ func (Category) NewModel(opt map[string]interface{}) (interface{}, error) {
 	}, nil
 }
 
-func (Category) RetrieveOne() interface{}{
+func (Category) RetrieveOne() interface{} {
 	return &Category{}
 }
 
-func (Category) RetrieveArray() interface{}{
+func (Category) RetrieveArray() interface{} {
 	return &[]Category{}
 }

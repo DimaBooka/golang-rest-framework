@@ -2,7 +2,7 @@ package models
 
 import (
 	"errors"
-		)
+)
 
 func setDefaultCheckRequired(required []string, defaultValues map[string]interface{}) (map[string]interface{}, error) {
 

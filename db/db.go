@@ -1,17 +1,17 @@
 package db
 
 import (
+	"transations-calculator/models"
 	"reflect"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
-	"transations-calculator/models"
 )
 
 type ModelObject struct {
 	collection *mgo.Collection
-	Instance models.ModelWithMethods
+	Instance   models.ModelWithMethods
 }
 
 func Model(db *mgo.Database, collectionName string, model models.ModelWithMethods) ModelObject {
